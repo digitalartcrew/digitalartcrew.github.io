@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1.0"
+		/>
+
+		<title>Runsmith</title>
+
+		<!-- Charts JS -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css"
+		/>
+
+		<!-- CSS  -->
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<link
+			href="css/materialize.css"
+			type="text/css"
+			rel="stylesheet"
+			media="screen,projection"
+		/>
+		<link
+			href="css/style.css"
+			type="text/css"
+			rel="stylesheet"
+			media="screen,projection"
+		/>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.js"></script>
+	</head>
+	<body>
+		<nav class="light-blue lighten-1" role="navigation">
+			<div class="nav-wrapper container">
+				<a id="logo-container" href="index.html" class="brand-logo">Runsmith</a>
+
+				<ul class="right hide-on-med-and-down">
+					<li>
+						<a class="modal-trigger" href="dashboard.html">Dashboard</a>
+					</li>
+					<li>
+						<a class="modal-trigger" href="records.html">Previous Records</a>
+					</li>
+					<li><a class="modal-trigger" href="settings.html">Settings</a></li>
+					<li><a class="modal-trigger" href="friends.html">Friends</a></li>
+					<li><a class="modal-trigger" href="index.html">Logout</a></li>
+				</ul>
+
+				<ul id="nav-mobile" class="sidenav">
+					<li><a href="#">Sign Up</a></li>
+				</ul>
+
+				<ul id="nav-mobile" class="sidenav">
+					<li><a href="#">Login</a></li>
+					ß
+				</ul>
+				<a href="#" data-target="nav-mobile" class="sidenav-trigger"
+					><i class="material-icons">menu</i></a
+				>
+			</div>
+		</nav>
+		<div class="container">
+			<ul class="collection">
+				<li class="collection-item avatar">
+					<i class="material-icons circle red">play_arrow</i>
+					<span class="title">Katherine Thomas</span>
+					<p>
+						Total Miles: 54 <br />
+						Average Pace: 7:21/mile
+					</p>
+					<a href="#!" class="secondary-content"
+						><i class="material-icons">grade</i></a
+					>
+				</li>
+				<li class="collection-item avatar">
+					<i class="material-icons circle">folder</i>
+					<span class="title">Buddy Thomas</span>
+					<p>
+						Total Miles: 54 <br />
+						Average Pace: 7:21/mile
+					</p>
+					<a href="#!" class="secondary-content"
+						><i class="material-icons">grade</i></a
+					>
+				</li>
+				<li class="collection-item avatar">
+					<i class="material-icons circle green">insert_chart</i>
+					<span class="title">Lisa Johnson</span>
+					<p>
+						Total Miles: 54 <br />
+						Average Pace: 7:21/mile
+					</p>
+					<a href="#!" class="secondary-content"
+						><i class="material-icons">grade</i></a
+					>
+				</li>
+				<li class="collection-item avatar">
+					<i class="material-icons circle red">play_arrow</i>
+					<span class="title">Big Money</span>
+					<p>
+						Total Miles: 54 <br />
+						Average Pace: 7:21/mile
+					</p>
+					<a href="#!" class="secondary-content"
+						><i class="material-icons">grade</i></a
+					>
+				</li>
+			</ul>
+		</div>
+
+		<!--  Scripts-->
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="js/materialize.js"></script>
+		<script src="js/init.js"></script>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				var elems = document.querySelectorAll(".modal");
+				var instances = M.Modal.init(elems, {});
+			});
+		</script>
+	</body>
+</html>
