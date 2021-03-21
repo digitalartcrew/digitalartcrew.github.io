@@ -42,7 +42,7 @@
 
 				<ul class="right hide-on-med-and-down">
 					<li>
-						<a class="modal-trigger" href="#modal1">Dashboard</a>
+						<a class="modal-trigger" href="dashboard.html">Dashboard</a>
 					</li>
 					<li>
 						<a class="modal-trigger" href="records.html">Records</a>
@@ -82,84 +82,71 @@
 		</nav>
 		<div class="container">
 			<div class="row">
-				<canvas id="myChart" width="200" height="60"></canvas>
-			</div>
-			<div class="row">
-				<div class="col s6">
-					<div class="card horizontal">
-						<div class="card-stacked">
-							<div class="card-content">
-								<h1>36</h1>
-							</div>
-							<div class="card-action">
-								Total Miles Ran From 10/1/2020 - March 15, 2021
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col s6">
-					<div class="card horizontal">
-						<div class="card-stacked">
-							<div class="card-content">
-								<h1>7:21</h1>
-							</div>
-							<div class="card-action">Average Mile</div>
-						</div>
-					</div>
-				</div>
+				<table>
+					<thead>
+						<tr>
+							<th>Goal Completion Date</th>
+							<th>Activity Type</th>
+							<th>Distance</th>
+							<th>Max Time</th>
+							<th>Status</th>
+							<th></th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>12/2/2020</td>
+							<th>Run</th>
+							<td>5.0</td>
+							<td>43 min 26 seconds</td>
+							<td>ACHIEVED</td>
+							<td>
+								<a class="dropdown-trigger" href="#" data-target="dropdown1"
+									>...</a
+								>
+							</td>
+							<ul id="dropdown1" class="dropdown-content">
+								<li><a href="#!">Update</a></li>
+								<li><a href="#!">Delete</a></li>
+							</ul>
+						</tr>
+						<tr>
+							<td>12/4/2020</td>
+							<th>Run</th>
+							<td>5.5</td>
+							<td>45 min 23 seconds</td>
+							<td>ACHIEVED</td>
+							<td>
+								<a class="dropdown-trigger" href="#" data-target="dropdown1"
+									>...</a
+								>
+							</td>
+							<ul id="dropdown1" class="dropdown-content">
+								<li><a href="#!">Update</a></li>
+								<li><a href="#!">Delete</a></li>
+							</ul>
+						</tr>
+						<tr>
+							<td>12/6/2020</td>
+							<th>Run</th>
+							<td>6.0</td>
+							<td>54 min 16 seconds</td>
+							<td>ACHIEVED</td>
+							<td>
+								<a class="dropdown-trigger" href="#" data-target="dropdown1"
+									>...</a
+								>
+							</td>
+							<ul id="dropdown1" class="dropdown-content">
+								<li><a href="#!">Update</a></li>
+								<li><a href="#!">Delete</a></li>
+							</ul>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
-
-		<script>
-			var ctx = document.getElementById("myChart").getContext("2d");
-			var myChart = new Chart(ctx, {
-				type: "line",
-				data: {
-					labels: [
-						"October",
-						"November",
-						"December",
-						"January",
-						"February",
-						"March",
-					],
-					datasets: [
-						{
-							label: "# of Miles",
-							data: [12, 19, 3, 5, 2, 3],
-							backgroundColor: [
-								"rgba(255, 99, 132, 0.2)",
-								"rgba(54, 162, 235, 0.2)",
-								"rgba(255, 206, 86, 0.2)",
-								"rgba(75, 192, 192, 0.2)",
-								"rgba(153, 102, 255, 0.2)",
-								"rgba(255, 159, 64, 0.2)",
-							],
-							borderColor: [
-								"rgba(255, 99, 132, 1)",
-								"rgba(54, 162, 235, 1)",
-								"rgba(255, 206, 86, 1)",
-								"rgba(75, 192, 192, 1)",
-								"rgba(153, 102, 255, 1)",
-								"rgba(255, 159, 64, 1)",
-							],
-							borderWidth: 1,
-						},
-					],
-				},
-				options: {
-					scales: {
-						yAxes: [
-							{
-								ticks: {
-									beginAtZero: true,
-								},
-							},
-						],
-					},
-				},
-			});
-		</script>
 
 		<!--  Scripts-->
 		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
